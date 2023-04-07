@@ -50,7 +50,12 @@ class Calculator {
                 System.out.printf("%f * %f = %f", number1, number2, number1 * number2);
                 break;
             case "div":
-
+                if (number2 == 0){
+                            System.out.println("Cannot divide by zero!");
+                        } else {
+                            System.out.printf("%f / %f = %f", number1, number2, number1 / number2);
+                        }
+                break;
             default:
                 System.out.printf("%s is not a supported operation!", operation);
                 break;
