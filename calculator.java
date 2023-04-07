@@ -20,7 +20,11 @@ class Calculator {
 
         if (operation.equals("sum")){
             System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
-        } else {
+        } else if (operation.equals("sub")) {
+            System.out.printf("%f - %f = %f", number1, number2, number1 - number2);
+        }
+        
+        else {
             System.out.printf("%s is not a supported operation!", operation);
         }
 
