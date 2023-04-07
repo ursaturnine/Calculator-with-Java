@@ -39,6 +39,7 @@ class Calculator {
 
 
         // switch statement
+        // faster than an if/else statement in Java
         switch(operation) {
             case "sum":
                 System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
