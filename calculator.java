@@ -18,12 +18,21 @@ class Calculator {
 
         String operation = scanner.nextLine();
 
+
+        // conditionals
         if (operation.equals("sum")){
             System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
         } else if (operation.equals("sub")) {
             System.out.printf("%f - %f = %f", number1, number2, number1 - number2);
+        } else if (operation.equals("mul")) {
+            System.out.printf("%f * %f = %f", number1, number2, number1 * number2);
+        } else if (operation.equals("div")){
+            if (number2 == 0){
+                System.out.println("Cannot divide by zero!");
+            } else {
+                System.out.printf("%f / %f = %f", number1, number2, number1 / number2);
+            }
         }
-        
         else {
             System.out.printf("%s is not a supported operation!", operation);
         }
